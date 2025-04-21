@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Renaissance Faire</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main>
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message"></textarea><br />
+
+      <fieldset>
+        <legend>How did you find us?</legend>
+        <ul class="radio-list">
+          <li><label><input type="radio" name="source" value="Google" required /> Google</label></li>
+          <li><label><input type="radio" name="source" value="Facebook" /> Facebook</label></li>
+          <li><label><input type="radio" name="source" value="Instagram" /> Instagram</label></li>
+          <li><label><input type="radio" name="source" value="X" /> X</label></li>
+          <li><label><input type="radio" name="source" value="LinkedIn" /> LinkedIn</label></li>
+          <li><label><input type="radio" name="source" value="Other" /> Other</label></li>
+        </ul>
+      </fieldset>        
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+  <script src="js/includes.js"></script>
+</body>
+</html>
