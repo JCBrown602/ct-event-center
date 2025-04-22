@@ -33,11 +33,19 @@
         </ul>
       </fieldset>        
 
-      <button type="submit">Submit</button>
+      <input type="submit" value="Send" />
     </form>
   </main>
 
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <p>Thank you! Your message has been submitted.</p>
+      <button onclick="document.getElementById('modal').classList.add('hidden')">Close</button>
+    </div>
+  </div>  
+
   <div data-include="components/footer.html"></div>
   <script src="js/includes.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>
