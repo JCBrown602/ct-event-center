@@ -1,4 +1,12 @@
-
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Ye Olde style fonts */
+  h1, h2, h3 {
+    font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  }
+  
 /* Contact Form Modal */
 #modal {
     position: fixed;
