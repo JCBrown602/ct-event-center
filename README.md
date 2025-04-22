@@ -16,8 +16,8 @@ A multi-page responsive website built with HTML and CSS to showcase a fictional 
 ## 🚀 Features
 
 - ✅ Responsive layout using semantic HTML and vanilla CSS
-- ⏳ Shared header and footer across all pages using HTML includes
-- ⏳ Modal confirmation on contact form submission
+- ✅ Shared header and footer across all pages using HTML includes
+- ✅ Modal confirmation on contact form submission
 - ⏳ Accessibility enhancements
 - ⏳ Light/dark theme toggle (optional future enhancement)
 
