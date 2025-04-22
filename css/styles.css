@@ -1,4 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    background-color: #fef9e7;
+    background-repeat: repeat;
+    color: #2d1a05;
+    margin: 0;
+    padding: 0;
+}
 
+/* Ye Olde style fonts */
+h1, h2, h3 {
+    font-family: 'Pirata One', 'Uncial Antiqua', serif;
+    color: #4b2e10;
+    text-shadow: 1px 1px 0 #e6d3b3;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+ 
+nav {
+    font-family: 'Pirata One', 'Uncial Antiqua', serif;
+    background-color: #8c5c2a;
+    padding: 0.75rem 1rem;
+    border-bottom: 4px solid #5a3210;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #f9f5e8;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #fdd78b;
+}
+  
+fieldset {
+    border: 3px double #6b4226;
+    background-color: rgba(255, 248, 220, 0.9);
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
 /* Contact Form Modal */
 #modal {
     position: fixed;
@@ -10,20 +57,20 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-  }
+}
 
 /* Using .hidden by itself gets overridden */
 #modal.hidden {
-display: none !important;
+    display: none !important;
 }
 
 .modal-content {
-background-color: rgb(100, 248, 149);
-padding: 2rem;
-border-radius: 8px;
-max-width: 300px;
-width: 90%;
-text-align: center;
+    background-color: rgb(100, 248, 149);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 90%;
+    text-align: center;
 }
   
   
