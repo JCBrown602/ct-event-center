@@ -1,0 +1,30 @@
+
+/* Contact Form Modal */
+#modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+/* Using .hidden by itself gets overridden */
+#modal.hidden {
+display: none !important;
+}
+
+.modal-content {
+background-color: rgb(100, 248, 149);
+padding: 2rem;
+border-radius: 8px;
+max-width: 300px;
+width: 90%;
+text-align: center;
+}
+  
+  
+  
