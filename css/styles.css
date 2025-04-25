@@ -72,6 +72,59 @@ fieldset {
     width: 90%;
     text-align: center;
 }
+
+.content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 240, 0.95); /* faint parchment overlay */
+    border: 2px solid #d6c6a3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }  
+
+.hero-banner {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 4px solid #5c3e1a;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns to the right */
+    background-color: #8c5c2a;
+    padding: 1rem 2rem;
+    border-bottom: 4px solid #5a3210;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 999; /* Keep it above other content */
+  }  
   
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+  }
   
+  .main-nav li {
+    margin: 0;
+  }
+  
+  .main-nav a {
+    color: #f9f5e8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .main-nav a:hover {
+    color: #ffd88a;
+    text-decoration: underline;
+  }
   
