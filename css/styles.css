@@ -82,6 +82,7 @@ fieldset {
     0 0 5px rgba(255, 233, 197, 0.8), 
     0 0 10px rgba(255, 233, 197, 0.6),
     0 0 15px rgba(255, 233, 197, 0.4);
+  animation: glowPulse 4s ease-in-out infinite;
 }
 
 .hero-text p {
@@ -186,5 +187,27 @@ fieldset {
   .main-nav a:hover {
     color: #ffd88a;
     text-decoration: underline;
+  }
+  
+  /* Glowing pulse effect for the hero-text H1 */
+  @keyframes glowPulse {
+    0% {
+      text-shadow: 
+        0 0 5px rgba(255, 233, 197, 0.8),
+        0 0 10px rgba(255, 233, 197, 0.6),
+        0 0 15px rgba(255, 233, 197, 0.4);
+    }
+    50% {
+      text-shadow: 
+        0 0 10px rgba(255, 233, 197, 1),
+        0 0 20px rgba(255, 233, 197, 0.8),
+        0 0 30px rgba(255, 233, 197, 0.6);
+    }
+    100% {
+      text-shadow: 
+        0 0 5px rgba(255, 233, 197, 0.8),
+        0 0 10px rgba(255, 233, 197, 0.6),
+        0 0 15px rgba(255, 233, 197, 0.4);
+    }
   }
   
