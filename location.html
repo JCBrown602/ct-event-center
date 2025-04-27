@@ -12,12 +12,33 @@
   <div data-include="components/header.html"></div>
 
   <div class="content-wrapper">
-    <main>
-      <h1>Find Us</h1>
-      <p>King Renny's enchanted lands are located at:</p>
-      <address>123 Kingsroad Lane, Bucksnort, TN 37140</address>
-      <p>Map coming soon!</p>
-    </main>
+    <header class="page-header">
+      <h1>Find Your Way to the Faire</h1>
+      <p>King Renny's Festival awaits you! Adventure is but a short journey away.</p>
+    </header>
+
+    <section class="location-info">
+      <h2>Faire Location</h2>
+      <p><strong>Address:</strong> 229 Kings Deer Drive, Clarksville, TN 37040</p>
+      <p><strong>Hours:</strong> Saturdays and Sundays, 10:00 AM – 6:00 PM</p>
+      <p><strong>Landmarks:</strong> Look for the twin towers at the village gate and the banners flying high above the woodlands!</p>
+
+      <!-- Embedded OpenStreetMap -->
+      <div class="map-container">
+        <iframe
+          width="100%"
+          height="450"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-87.420412%2C36.605607%2C-87.418412%2C36.607607&layer=mapnik&marker=36.606607%2C-87.419412"
+          style="border: 1px solid #ccc; border-radius: 8px;">
+        </iframe>
+        <br />
+        <small><a href="https://www.openstreetmap.org/?mlat=36.606607&mlon=-87.419412#map=19/36.606607/-87.419412">View Larger Map</a></small>
+      </div>      
+    </section>
   </div>
 
   <div data-include="components/footer.html"></div>

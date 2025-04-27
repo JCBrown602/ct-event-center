@@ -430,6 +430,32 @@ fieldset {
   color: #3a2b1a;
   text-align: center;
 }
+
+/* Location Page Styles */
+.location-info {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.location-info h2 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 2rem;
+  color: #5a3210;
+  margin-bottom: 1rem;
+}
+
+.location-info p {
+  font-size: 1.125rem;
+  color: #3a2b1a;
+  margin: 0.5rem 0;
+}
+
+.map-container {
+  margin-top: 2rem;
+  border: 2px solid #d6c6a3;
+  border-radius: 8px;
+  overflow: hidden;
+}
   
 /* Glowing pulse effect for the hero-text H1 */
 @keyframes glowPulse {
