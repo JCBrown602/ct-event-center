@@ -12,6 +12,14 @@ A multi-page responsive website built with HTML and CSS to showcase a fictional 
 ### Live site: https://jcbrown602.github.io/ct-event-center/
 
 ### Browser Screenshots
+Main Page
+
+<img src="images/admin/screen-main-page.JPG" alt="Main page screenshot" width="400" />
+
+
+Events Page
+
+<img src="images/admin/screen-events-page.JPG" alt="Events page screenshot" width="400" />
 
 ## 🚀 Features
 
