@@ -381,6 +381,55 @@ fieldset {
   transform: translateY(-5px);
   box-shadow: 0 6px 14px rgba(212, 175, 55, 0.5);
 }
+
+/* Menu Page Styles */
+.menu-section {
+  margin-top: 2rem;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fef9e7;
+  border: 2px solid #d6c6a3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-table th, .menu-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #d6c6a3;
+  text-align: left;
+}
+
+.menu-table th {
+  background-color: #8c5c2a;
+  color: #f9f5e8;
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 1.25rem;
+}
+
+.category-row td {
+  background-color: #e9d8a6;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+}
+
+.menu-table tr:nth-child(even) {
+  background-color: #fffaf0;
+}
+
+.menu-table tr:hover {
+  background-color: #fdd78b;
+}
+
+.currency-note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #3a2b1a;
+  text-align: center;
+}
   
 /* Glowing pulse effect for the hero-text H1 */
 @keyframes glowPulse {
