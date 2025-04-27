@@ -233,7 +233,7 @@ form input[type="submit"]:hover {
 
 .main-nav a:hover {
   color: #ffd88a;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* This is the site title text in the nav bar */
@@ -452,6 +452,13 @@ form input[type="submit"]:hover {
   font-size: 0.95rem;
   color: #3a2b1a;
   text-align: center;
+}
+
+.menu-thumb {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Location Page Styles */
