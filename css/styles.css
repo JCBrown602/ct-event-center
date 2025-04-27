@@ -369,6 +369,18 @@ fieldset {
   font-size: 1rem;
   color: #3a2b1a;
 }
+
+/* Royal Flair for Royal Court Cards */
+.royal-card {
+  background-color: #fffaf0;
+  border: 3px solid #d4af37; /* royal gold */
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3); /* soft golden glow */
+}
+
+.royal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(212, 175, 55, 0.5);
+}
   
 /* Glowing pulse effect for the hero-text H1 */
 @keyframes glowPulse {
