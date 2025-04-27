@@ -90,6 +90,29 @@ fieldset {
   margin: 0;
 }
 
+/* Home Page Sections */
+.welcome-section, .about-us-section {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid #d6c6a3;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2, .about-us-section h2 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  color: #5a3210;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-section p, .about-us-section p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #3a2b1a;
+}
+
 /* Responsive Tweaks for Smaller Screens */
 @media (max-width: 768px) {
   .hero-text {
@@ -164,50 +187,50 @@ fieldset {
     z-index: 999; /* Keep it above other content */
   }  
   
-  .main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.25rem;
-    margin: 0;
-    padding: 0;
-  }
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  color: #f9f5e8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.main-nav a:hover {
+  color: #ffd88a;
+  text-decoration: underline;
+}
   
-  .main-nav li {
-    margin: 0;
+/* Glowing pulse effect for the hero-text H1 */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 
+      0 0 5px rgba(255, 233, 197, 0.8),
+      0 0 10px rgba(255, 233, 197, 0.6),
+      0 0 15px rgba(255, 233, 197, 0.4);
   }
-  
-  .main-nav a {
-    color: #f9f5e8;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 0.5rem;
+  50% {
+    text-shadow: 
+      0 0 10px rgba(255, 233, 197, 1),
+      0 0 20px rgba(255, 233, 197, 0.8),
+      0 0 30px rgba(255, 233, 197, 0.6);
   }
-  
-  .main-nav a:hover {
-    color: #ffd88a;
-    text-decoration: underline;
+  100% {
+    text-shadow: 
+      0 0 5px rgba(255, 233, 197, 0.8),
+      0 0 10px rgba(255, 233, 197, 0.6),
+      0 0 15px rgba(255, 233, 197, 0.4);
   }
-  
-  /* Glowing pulse effect for the hero-text H1 */
-  @keyframes glowPulse {
-    0% {
-      text-shadow: 
-        0 0 5px rgba(255, 233, 197, 0.8),
-        0 0 10px rgba(255, 233, 197, 0.6),
-        0 0 15px rgba(255, 233, 197, 0.4);
-    }
-    50% {
-      text-shadow: 
-        0 0 10px rgba(255, 233, 197, 1),
-        0 0 20px rgba(255, 233, 197, 0.8),
-        0 0 30px rgba(255, 233, 197, 0.6);
-    }
-    100% {
-      text-shadow: 
-        0 0 5px rgba(255, 233, 197, 0.8),
-        0 0 10px rgba(255, 233, 197, 0.6),
-        0 0 15px rgba(255, 233, 197, 0.4);
-    }
-  }
+}
   
