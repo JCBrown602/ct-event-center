@@ -113,32 +113,54 @@ fieldset {
   color: #3a2b1a;
 }
 
-/* Responsive Tweaks for Smaller Screens */
-@media (max-width: 768px) {
-  .hero-text {
-    top: 60%;
-    right: 5%;
-    transform: translateY(-50%);
-    font-size: 0.9rem;
-    padding: 0.75rem 1rem;
-    max-width: 80%;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  } 
+/* Contact Form */
+form {
+  background-color: rgba(255, 255, 240, 0.95);
+  padding: 2rem;
+  border: 2px solid #d6c6a3;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
 }
 
-@media (min-width: 1024px) {
-  .hero-text h1 {
-    font-size: 3.5rem; /* 💥 much larger hero heading */
-  }
-} 
-  
+form label, form legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5a3210;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d6c6a3;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: #8c5c2a;
+  color: #f9f5e8;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #a0522d;
+}
+
 /* Contact Form Modal */
 #modal {
     position: fixed;
@@ -166,6 +188,7 @@ fieldset {
     text-align: center;
 }
 
+/* Content and Navigation */
 .content-wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -245,7 +268,7 @@ fieldset {
   display: flex;
   gap: 2rem;
   justify-content: center;
-  flex-wrap: wrap; /* ✅ So they wrap nicely on smaller screens */
+  flex-wrap: wrap; /* So they wrap nicely on smaller screens */
 }
 
 .event-card {
@@ -465,6 +488,32 @@ fieldset {
   border: 2px solid #d6c6a3;
   border-radius: 12px;
 }
+
+/* Responsive Tweaks for Smaller Screens */
+@media (max-width: 768px) {
+  .hero-text {
+    top: 60%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    max-width: 80%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  } 
+}
+
+@media (min-width: 1024px) {
+  .hero-text h1 {
+    font-size: 3.5rem; /* 💥 much larger hero heading */
+  }
+} 
   
 /* Glowing pulse effect for the hero-text H1 */
 @keyframes glowPulse {
