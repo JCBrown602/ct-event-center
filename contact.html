@@ -15,14 +15,14 @@
       <h1>Contact Us</h1>
       <form id="contactForm">
         <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
-
+        <input type="text" id="name" name="name" required /><br />
+    
         <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" /><br />
-
+        <input type="email" id="email" name="email" required /><br />
+    
         <label for="message">Message:</label><br />
-        <textarea id="message" name="message"></textarea><br />
-
+        <textarea id="message" name="message" required></textarea><br />
+    
         <fieldset>
           <legend>How did you find us?</legend>
           <ul class="radio-list">
@@ -34,7 +34,7 @@
             <li><label><input type="radio" name="source" value="Other" /> Other</label></li>
           </ul>
         </fieldset>        
-
+    
         <input type="submit" value="Send" />
       </form>
     </main>

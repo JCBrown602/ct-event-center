@@ -45,7 +45,122 @@ fieldset {
     margin-top: 1.5rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-  
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: #f9f5e8;
+  text-align: right;
+  max-width: 60%;
+}
+
+.hero-text h1 {
+  color: #ffe9c5; /* lighter parchment gold color */
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 
+    0 0 5px rgba(255, 233, 197, 0.8), 
+    0 0 10px rgba(255, 233, 197, 0.6),
+    0 0 15px rgba(255, 233, 197, 0.4);
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Home Page Sections */
+.welcome-section, .about-us-section {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid #d6c6a3;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2, .about-us-section h2 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  color: #5a3210;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-section p, .about-us-section p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #3a2b1a;
+}
+
+/* Contact Form */
+form {
+  background-color: rgba(255, 255, 240, 0.95);
+  padding: 2rem;
+  border: 2px solid #d6c6a3;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+form label, form legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5a3210;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d6c6a3;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: #8c5c2a;
+  color: #f9f5e8;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #a0522d;
+}
+
 /* Contact Form Modal */
 #modal {
     position: fixed;
@@ -73,6 +188,7 @@ fieldset {
     text-align: center;
 }
 
+/* Content and Navigation */
 .content-wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -82,18 +198,10 @@ fieldset {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   }  
 
-.hero-banner {
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: cover;
-    display: block;
-    border-bottom: 4px solid #5c3e1a;
-}
-
 .main-nav {
     display: flex;
-    justify-content: flex-end; /* Aligns to the right */
+    justify-content: space-between;   /* Title left, links right */
+    align-items: center;              /* Vertically center title and links */
     background-color: #8c5c2a;
     padding: 1rem 2rem;
     border-bottom: 4px solid #5a3210;
@@ -103,28 +211,329 @@ fieldset {
     z-index: 999; /* Keep it above other content */
   }  
   
-  .main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.25rem;
-    margin: 0;
-    padding: 0;
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  color: #f9f5e8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.main-nav a:hover {
+  color: #ffd88a;
+  text-decoration: underline;
+}
+
+/* This is the site title text in the nav bar */
+.site-title {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  color: #f9f5e8;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #5a3210;
+  white-space: nowrap;
+}
+
+/* Featured Events Section */
+.featured-events {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid #d6c6a3;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-events h2 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 2rem;
+  color: #5a3210;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.event-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; /* So they wrap nicely on smaller screens */
+}
+
+.event-card {
+  background-color: #fef9e7;
+  border: 2px solid #d6c6a3;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.event-card h3 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 1.5rem;
+  color: #5a3210;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #3a2b1a;
+  margin-bottom: 1rem;
+}
+
+.event-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #8c5c2a;
+  color: #f9f5e8;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.event-card a:hover {
+  background-color: #a0522d;
+}
+
+/* Events Page Section */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 2.5rem;
+  color: #5a3210;
+}
+
+.page-header p {
+  font-size: 1.25rem;
+  color: #3a2b1a;
+}
+
+.events-category {
+  margin-bottom: 3rem;
+}
+
+.events-category h2 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 2rem;
+  color: #5a3210;
+  margin-bottom: 1rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.event-card {
+  background-color: #fef9e7;
+  border: 2px solid #d6c6a3;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.event-card h3 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 1.5rem;
+  color: #5a3210;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #3a2b1a;
+}
+
+/* Royal Flair for Royal Court Cards */
+.royal-card {
+  background-color: #fffaf0;
+  border: 3px solid #d4af37; /* royal gold */
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3); /* soft golden glow */
+}
+
+.royal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(212, 175, 55, 0.5);
+}
+
+/* Menu Page Styles */
+.menu-section {
+  margin-top: 2rem;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fef9e7;
+  border: 2px solid #d6c6a3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-table th, .menu-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #d6c6a3;
+  text-align: left;
+}
+
+.menu-table th {
+  background-color: #8c5c2a;
+  color: #f9f5e8;
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 1.25rem;
+}
+
+.category-row td {
+  background-color: #e9d8a6;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+}
+
+.menu-table tr:nth-child(even) {
+  background-color: #fffaf0;
+}
+
+.menu-table tr:hover {
+  background-color: #fdd78b;
+}
+
+.currency-note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #3a2b1a;
+  text-align: center;
+}
+
+/* Location Page Styles */
+.location-info {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.location-info h2 {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  font-size: 2rem;
+  color: #5a3210;
+  margin-bottom: 1rem;
+}
+
+.location-info p {
+  font-size: 1.125rem;
+  color: #3a2b1a;
+  margin: 0.5rem 0;
+}
+
+.map-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff8dc, #fef3c7);
+  border: 6px double #d6c6a3;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 2px solid #d6c6a3;
+  border-radius: 12px;
+}
+
+/* Responsive Tweaks for Smaller Screens */
+@media (max-width: 768px) {
+  .hero-text {
+    top: 60%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    max-width: 80%;
   }
-  
-  .main-nav li {
-    margin: 0;
+
+  .hero-text h1 {
+    font-size: 2rem;
   }
-  
-  .main-nav a {
-    color: #f9f5e8;
-    text-decoration: none;
-    font-weight: bold;
+
+  .hero-text p {
     font-size: 1rem;
-    padding: 0.5rem;
+  } 
+}
+
+@media (min-width: 1024px) {
+  .hero-text h1 {
+    font-size: 3.5rem; /* 💥 much larger hero heading */
   }
+} 
   
-  .main-nav a:hover {
-    color: #ffd88a;
-    text-decoration: underline;
+/* Glowing pulse effect for the hero-text H1 */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 
+      0 0 5px rgba(255, 233, 197, 0.8),
+      0 0 10px rgba(255, 233, 197, 0.6),
+      0 0 15px rgba(255, 233, 197, 0.4);
   }
+  50% {
+    text-shadow: 
+      0 0 10px rgba(255, 233, 197, 1),
+      0 0 20px rgba(255, 233, 197, 0.8),
+      0 0 30px rgba(255, 233, 197, 0.6);
+  }
+  100% {
+    text-shadow: 
+      0 0 5px rgba(255, 233, 197, 0.8),
+      0 0 10px rgba(255, 233, 197, 0.6),
+      0 0 15px rgba(255, 233, 197, 0.4);
+  }
+}
   

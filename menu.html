@@ -11,11 +11,84 @@
 <body>
   <div data-include="components/header.html"></div>
 
+
   <div class="content-wrapper">
-    <main>
-      <h1>Food & Drink</h1>
-      <p>Feast like royalty with our medieval-inspired menu and hearty fare.</p>
-    </main>
+    <header class="page-header">
+      <h1>Feast Like Royalty!</h1>
+      <p>Delight your senses with hearty meals, sweet treats, and drinks fit for kings and queens!</p>
+    </header>
+
+    <section class="menu-section">
+      <table class="menu-table">
+        <thead>
+          <tr>
+            <th>Dish</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Appetizers -->
+          <tr class="category-row">
+            <td colspan="2">Appetizers</td>
+          </tr>
+          <tr>
+            <td>Roasted Turkey Leg</td>
+            <td>1 Silver Shilling (ss)</td>
+          </tr>
+          <tr>
+            <td>Dragon’s Breath Hot Wings</td>
+            <td>1 Silver Shilling (ss)</td>
+          </tr>
+
+          <!-- Mains -->
+          <tr class="category-row">
+            <td colspan="2">Mains</td>
+          </tr>
+          <tr>
+            <td>King’s Feast Platter (Beef, Chicken, Sausage)</td>
+            <td>1 Gold Crown (gc)</td>
+          </tr>
+          <tr>
+            <td>Hunter’s Stew (Venison and Root Vegetables)</td>
+            <td>1 Gold Crown (gc)</td>
+          </tr>
+
+          <!-- Desserts -->
+          <tr class="category-row">
+            <td colspan="2">Desserts</td>
+          </tr>
+          <tr>
+            <td>Apple Tarts</td>
+            <td>2 Copper Pennies (cp)</td>
+          </tr>
+          <tr>
+            <td>Honey Cakes</td>
+            <td>2 Copper Pennies (cp)</td>
+          </tr>
+
+          <!-- Drinks -->
+          <tr class="category-row">
+            <td colspan="2">Drinks</td>
+          </tr>
+          <tr>
+            <td>Mead</td>
+            <td>1 Copper Penny (cp)</td>
+          </tr>
+          <tr>
+            <td>Spring Water</td>
+            <td>1 Copper Penny (cp)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="currency-note">
+        <em>Currency Conversion:</em><br>
+        1 Gold Crown (gc) ≈ $10.00<br>
+        1 Silver Shilling (ss) ≈ $5.00<br>
+        1 Copper Penny (cp) ≈ $1.00
+      </p>
+    </section>
+
   </div>
 
   <div data-include="components/footer.html"></div>
