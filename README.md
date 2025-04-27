@@ -9,7 +9,7 @@ A multi-page responsive website built with HTML and CSS to showcase a fictional 
 
 ## 📸 Preview
 
-### Live site: 
+### Live site: https://jcbrown602.github.io/ct-event-center/
 
 ### Browser Screenshots
 
@@ -47,9 +47,11 @@ renaissance-faire/
 │   └── styles.css
 ├── js/
 │   ├── includes.js
-│   └── modal.js (coming soon)
+│   └── modal.js
 ├── images/
-│   └── (placeholder images)
+│   ├── (Carolina Renn Faire images)
+│   └── admin
+│       └── (screenshots)
 └── README.md
 ```
 
