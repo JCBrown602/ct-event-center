@@ -177,7 +177,8 @@ fieldset {
 
 .main-nav {
     display: flex;
-    justify-content: flex-end; /* Aligns to the right */
+    justify-content: space-between;   /* Title left, links right */
+    align-items: center;              /* Vertically center title and links */
     background-color: #8c5c2a;
     padding: 1rem 2rem;
     border-bottom: 4px solid #5a3210;
@@ -210,6 +211,16 @@ fieldset {
 .main-nav a:hover {
   color: #ffd88a;
   text-decoration: underline;
+}
+
+/* This is the site title text in the nav bar */
+.site-title {
+  font-family: 'Pirata One', 'Uncial Antiqua', serif;
+  color: #f9f5e8;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #5a3210;
+  white-space: nowrap;
 }
   
 /* Glowing pulse effect for the hero-text H1 */
