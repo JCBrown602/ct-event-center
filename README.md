@@ -81,7 +81,11 @@ All commits to this repository are cryptographically signed using GPG for authen
 - CSS3
 - JavaScript (for includes and modal logic)
 - [Google Fonts](https://fonts.google.com/) (medieval-themed fonts)
-- [Unsplash](https://unsplash.com/) and [Picsum](https://picsum.photos/) for placeholder images
+
+## 📸 Image Credits
+
+- Event and atmosphere photos used throughout the site are courtesy of the [Carolina Renaissance Festival](https://www.carolina.renfestinfo.com/photo-gallery).
+- Images are used for educational and non-commercial purposes only as part of a web development bootcamp project.
 
 ## 📫 Contact
 

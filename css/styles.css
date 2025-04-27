@@ -496,6 +496,30 @@ form input[type="submit"]:hover {
   border-radius: 12px;
 }
 
+footer {
+  background-color: #8c5c2a;
+  color: #f9f5e8;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  border-top: 3px solid #5a3210;
+}
+
+footer a {
+  color: #a89c85;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffd88a;
+}
+
+.footer-credit {
+  font-size: 0.75rem;
+  color: #a89c85;
+  margin-top: 1rem;
+}
+
 /* Responsive Tweaks for Smaller Screens */
 @media (max-width: 768px) {
   .hero-text {
