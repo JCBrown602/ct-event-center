@@ -350,13 +350,14 @@ form input[type="submit"]:hover {
 
 .page-header h1 {
   font-family: 'Pirata One', 'Uncial Antiqua', serif;
-  font-size: 2.5rem;
-  color: #5a3210;
+  font-size: 3.0rem;
+  color: rgba(255, 255, 240, 0.95);
+  text-shadow: 1px 1px 0 #5a3210;
 }
 
 .page-header p {
   font-size: 1.25rem;
-  color: #3a2b1a;
+  color: rgba(255, 255, 240, 0.95);
 }
 
 .events-category {
